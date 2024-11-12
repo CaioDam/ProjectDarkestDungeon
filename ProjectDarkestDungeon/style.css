@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+html{
+    height: 250vh;
+    background: rgb(0, 0, 0);
+}
+
+
+.container {
+    max-width: 1280px;
+    margin: auto;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+header{
+    width: 100%;
+    padding: 60px 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+header.rolagem{
+    background-color: #F8EDED;
+    padding: 1px 4%;
+}
+
+header.rolagem a,header.rolagem i{
+    color: #000000;
+}
+
+
+
+header i{
+    font-size: 30px;
+    color: #F8EDED;
+}
+
+header ul{
+    list-style: none;
+}
+
+header ul li {
+
+    display: inline-block;
+    margin: 0px 40px;
+}
+
+header ul li a{
+    color: #F8EDED;
+    text-decoration: none;
+}
+
+header ul li a:hover{
+    color: #B43F3F;
+    text-decoration: none;
+}
+
+.contato button{
+
+    width: 120px;
+    height: 40px;
+    border: 0;
+    background-color: #B43F3F;
+    color: #F8EDED;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.contato button:hover{
+    background-color: #173B45;
+    color: #FF8225;
+}
+.banner{
+    height: 100vh;
+    background-image: url(img/fundo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner h1{
+    display: inline-block;
+    font-size:  4em;
+    color: #F8EDED;
+}
+
+.banner h1 span{
+    color: #B43F3F;
+}
+
+.mid {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding: 200px;
+    color: #F8EDED;
+    background-image: url(./img/fundo-mid.webp);
+    
+}
+.mid span{
+    color: #B43F3F;
+}
+
+.midding{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding: 200px;
+    color: #F8EDED;
+    background-image: url(./img/fundo-midding.webp);
+}
+
+.midding span{
+    color: #B43F3F;
+}
+
+.mid-end{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding: 100px;
+    color: #F8EDED;
+}
+.mid-end span{
+    color: #B43F3F;
+}
+.end {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-image: url(./img/fundo-slider.png);
+
+}
+
+.slider {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 500px;
+    gap: 10px;
+  
+    > div {
+      flex: 0 0 120px;
+      border-radius: 0.5rem;
+      transition: 0.5s ease-in-out;
+      cursor: pointer;
+      box-shadow: 1px 5px 15px #000000;
+      position: relative;
+      overflow: hidden;
+  
+      &:nth-of-type(1) {
+        background: url("./img/Crusader.png")
+          no-repeat 50% / cover;
+      }
+      &:nth-of-type(2) {
+        background: url("./img/Grave-Robber.png")
+          no-repeat 50% / cover;
+      }
+      &:nth-of-type(3) {
+        background: url("./img/Jester.png")
+          no-repeat 50% / cover;
+      }
+      &:nth-of-type(4) {
+        background: url("./img/Plague-Doctor.png")
+          no-repeat 50% / cover;
+      }
+      .content {
+        font-size: 1.5rem;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        opacity: 0;
+        flex-direction: column;
+        height: 100%;
+        justify-content: flex-end;
+        background: rgb(0, 0, 0);
+        background: linear-gradient(
+          0deg,
+          rgb(0, 0, 0) 0%,
+          rgba(0, 0, 0, 0) 100%
+        );
+        transform: translatey(100%);
+        transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
+        visibility: hidden;
+  
+        span {
+          display: block;
+          margin-top: 5px;
+          font-size: 1.2rem;
+        }
+      }
+  
+      &:hover {
+        flex: 0 0 250px;
+        box-shadow: 1px 3px 15px #ff0000;
+        transform: translatey(-30px);
+      }
+  
+      &:hover .content {
+        opacity: 1;
+        transform: translatey(0%);
+        visibility: visible;
+      }
+    }
+  }
+.linha{
+    display: flex;
+    width: 100%;
+    height: 1px;
+    background-color: #F8EDED;
+}
+
+.titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #B43F3F;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
