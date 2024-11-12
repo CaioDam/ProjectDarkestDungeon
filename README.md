@@ -8,7 +8,8 @@ Testando coisas novas
 <br>
 ![image](https://github.com/user-attachments/assets/15532b82-49c2-49ac-91fa-d833c993728a)
 <br>
-padding: 10%;
+<br>
+<br>
 -------------------------------------------------📌Coloquei carrousel-------------------------------------------------
 ![image](https://github.com/user-attachments/assets/b58e2bdc-636e-4ebb-a3c3-9233ec5b2633)
 <br>
